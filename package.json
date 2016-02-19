@@ -1,0 +1,26 @@
+{
+  "name": "prototype-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dan Hayden <pythonic1@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danhayden/prototype-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danhayden/prototype-server/issues"
+  },
+  "homepage": "https://github.com/danhayden/prototype-server#readme",
+  "dependencies": {
+    "ecstatic": "^1.4.0",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "lodash": "^4.5.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
