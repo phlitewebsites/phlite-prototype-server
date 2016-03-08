@@ -1,11 +1,11 @@
-const _ = require('lodash');
-const ecstatic = require('ecstatic');
-const express = require('express');
-const fs = require('fs');
-const path = require('path');
+import _ from 'lodash';
+import ecstatic from 'ecstatic';
+import express from 'express';
+import fs from 'fs';
+import path from 'path';
 
 function prototypeServer (options) {
-  const app = express();
+  var app = express();
 
   /**
    * TEMPLATES
@@ -34,18 +34,15 @@ function prototypeServer (options) {
   // auto render if view with the same name as url exists
   app.use(function (req, res, next) {
     var file = req.path.toLowerCase().substring(1).replace(/\/$/, '');
-
     var filePath = path.resolve(`${options.views}/pages/${file}.ejs`);
     var dirPath = path.resolve(`${options.views}/pages/${file}/index.ejs`);
 
     if (fs.existsSync(dirPath)) {
       return res.status(200).render(`pages/${file}/index`, {data: getData()});
     }
-
     if (fs.existsSync(filePath)) {
       return res.status(200).render(`pages/${file}`, {data: getData()});
     }
-
     next();
   });
 
