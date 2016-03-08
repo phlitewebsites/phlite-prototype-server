@@ -1,8 +1,8 @@
-var _ require('lodash');
-var ecstatic require('ecstatic');
-var express require('express');
-var fs require('fs');
-var path require('path');
+var _ = require('lodash');
+var ecstatic = require('ecstatic');
+var express = require('express');
+var fs = require('fs');
+var path = require('path');
 
 function prototypeServer (options) {
   var app = express();
