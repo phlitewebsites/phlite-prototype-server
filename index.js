@@ -24,7 +24,7 @@ function prototypeServer (options) {
   /**
    * Middleware
    */
-  app.server.use(compression());
+  app.use(compression());
 
   /**
    * ROUTES
