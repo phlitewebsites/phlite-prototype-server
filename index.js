@@ -49,7 +49,10 @@ function prototypeServer (options) {
   /**
    * STATIC FILES
    */
-  app.use(ecstatic({root: options.public}));
+  app.use(ecstatic({
+    root: options.public,
+    gzip: true
+  }));
 
   return app;
 }
