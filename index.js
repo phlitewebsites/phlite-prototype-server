@@ -1,4 +1,5 @@
 var _ = require('lodash');
+var compression = require('compression');
 var ecstatic = require('ecstatic');
 var express = require('express');
 var fs = require('fs');
@@ -19,6 +20,11 @@ function prototypeServer (options) {
   function getData () {
     return JSON.parse(fs.readFileSync(`${options.data}/data.json`, 'utf8'));
   }
+
+  /**
+   * Middleware
+   */
+  app.server.use(compression());
 
   /**
    * ROUTES

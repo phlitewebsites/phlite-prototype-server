@@ -16,6 +16,7 @@
   },
   "homepage": "https://github.com/danhayden/prototype-server#readme",
   "dependencies": {
+    "compression": "1.6.1",
     "ecstatic": "^1.4.0",
     "ejs": "^2.4.1",
     "express": "^4.13.4",
