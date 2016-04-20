@@ -9,12 +9,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/danhayden/prototype-server.git"
+    "url": "git+https://github.com/phlitewebsites/phlite-prototype-server.git"
   },
   "bugs": {
-    "url": "https://github.com/danhayden/prototype-server/issues"
+    "url": "https://github.com/phlitewebsites/phlite-prototype-server/issues"
   },
-  "homepage": "https://github.com/danhayden/prototype-server#readme",
+  "homepage": "https://github.com/phlitewebsites/phlite-prototype-server#readme",
   "dependencies": {
     "compression": "1.6.1",
     "ecstatic": "^1.4.0",
