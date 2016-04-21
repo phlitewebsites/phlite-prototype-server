@@ -17,10 +17,10 @@
   "homepage": "https://github.com/phlitewebsites/phlite-prototype-server#readme",
   "dependencies": {
     "compression": "1.6.1",
-    "ecstatic": "^1.4.0",
-    "ejs": "^2.4.1",
-    "express": "^4.13.4",
-    "lodash": "^4.5.0"
+    "ecstatic": "1.4.0",
+    "ejs": "2.4.1",
+    "express": "4.13.4",
+    "lodash": "4.11.1"
   },
   "devDependencies": {},
   "description": ""
